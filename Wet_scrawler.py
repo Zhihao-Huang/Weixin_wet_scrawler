@@ -121,17 +121,18 @@ def main():
     appmsg_token 从客户端打开文章的源代码获取。
     """
     # 使用Cookie，跳过登陆操作,Cookie一天左右会变化，注意更新
-    mpCookie = 'pgv_pvi=3051430912; RK=NJTgHLR1eM; ptcz=b3d6517af75af27a7c96f6cf71a5560088c4823f99fa5a8d71ab7b4ec0a357e7; pgv_pvid=3371384032; o_cookie=465626040; pac_uid=1_465626040; tvfe_boss_uuid=3841b6cb909d7b56; ua_id=gNffOGkUzvA7qlVFAAAAAF5vW00Fnip2-hO4YhcSUUQ=; mm_lang=zh_CN; noticeLoginFlag=1; openid2ticket_o817K1bYQc4rnK6Tmk3bZf58raO4=gPzMQ+0wGT4wqZYQPEE/lPbWvg+WJNF0DCc2cX0hz30=; pgv_si=s5634223104; cert=OAp6L0WYwV7iwPfC0sQSiLz0q0qS9OZs; sig=h01e3b3e459763468d3aac17c36a575101b216a14ede42eb32886554f463f92e069fd5e5f9c5aa14126; master_key=X/WjPkUvyY7aztS5nadXF9dF9jC6aNFscuDBlYamsDs=; pgv_info=ssid=s6291140483; _qpsvr_localtk=0.2825344850486893; uin=o0465626040; skey=@tXR9xbZqH; ptisp=cm; uuid=b485ebf692ff04bf816533565e6b6aca; data_bizuin=3586809587; bizuin=3586809587; data_ticket=6ZfI7Ba6v6lpMYCYCn4TbJ357gNf2659jx9NmzwiuHLB0Lbfb1n2MA+Cm6A/E2UK; slave_sid=QUVneW1NWnFLMFF5U0JzdmhvYm9EemVCTl8xU2tXTHZyYVNHVUZtVEY1eTdxbkRFMjJNYkdSeDRZc3pxMThHWG8xNzBacXRoSnpIcjVVNlBSaWh3RG54Q0JJR3RDeklZR21UY29mOExwZlpxUkFrQ09ZN0ZJVG1IVU9nR3ZEY0RpNUlLV3dqMHpocEtvMjRQ; slave_user=gh_224e78dd7523; xid=bc0d5a910541a1277f67c304b73621d8'
-    mptoken = 1288978987
-    appCookie = 'rewardsn=; wxuin=856784061; devicetype=Windows10; version=62060833; lang=zh_CN; pass_ticket=Du0QmpW30i+AabOvjGOw3nPAAc1d5hGbzMUSNySpEJ0dj6Wu+sNAZ013k3xNDl0j; wap_sid2=CL35xZgDElxobXYyRlROZ0RVUXBtV3FQMGwxX1NudVVPRTZkNFJDM05HRWl4NkdIZ05vbGhvRnZMRnlpV1Z0VUxySVgzeFI2R1p1R1ctWWdGNThNWW1MTGFzMU13ZmtEQUFBfjC77qHpBTgNQAE=; wxtokenkey=777'
-    appmsg_token = '1017_saY89U7obW0xB2yeK9lBb3s490q40DVYCVdmOyV1-iU07eZpBHF5bulYLjnxt7GTM4xLI0S7OQMlU6rz'
-    nickname = '找药宝典'
-    fakeid = 'MzI3MjE2NzI4Mg=='
+    mpCookie = 
+    mptoken = 
+    appCookie = 
+    appmsg_token = 
+    fakeid = 
+    #目标公众号名称
+    nickname = 
     #从第几页开始爬
     breakpage = 42
     #估算众号文章总页数，用以迭代
     articles_page_sum = 30
-    ##爬取结果
+    ##爬取并输出结果
     get_result(mpCookie,mptoken,fakeid,appCookie,appmsg_token,nickname,breakpage,articles_page_sum)
 if __name__ == '__main__':
     main()
