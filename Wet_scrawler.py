@@ -130,7 +130,7 @@ def main():
     nickname = 
     #从第几页开始爬
     breakpage = 0
-    #估算众号文章总页数，用以迭代
+    #众号文章总页数，用以迭代。总页数可以从公众号搜索栏的右下角获取。
     articles_page_sum = 2
     ##爬取并输出结果
     get_result(mpCookie,mptoken,fakeid,appCookie,appmsg_token,nickname,breakpage,articles_page_sum)
