@@ -117,7 +117,7 @@ def main():
     添加请求参数
     mpCookie,mptoken,fakeid从公众号的网页源代码获取
     mid、sn、idx分别对应每篇文章的url的信息，需要从url中进行提取
-    apptoken从客户端打开的文章后，fiddler上获取
+    appcookie从客户端打开的文章后，fiddler上获取
     appmsg_token 从客户端打开文章的源代码获取。
     """
     # 使用Cookie，跳过登陆操作,Cookie一天左右会变化，注意更新
