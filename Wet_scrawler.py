@@ -129,9 +129,9 @@ def main():
     #目标公众号名称
     nickname = 
     #从第几页开始爬
-    breakpage = 42
+    breakpage = 0
     #估算众号文章总页数，用以迭代
-    articles_page_sum = 30
+    articles_page_sum = 2
     ##爬取并输出结果
     get_result(mpCookie,mptoken,fakeid,appCookie,appmsg_token,nickname,breakpage,articles_page_sum)
 if __name__ == '__main__':
