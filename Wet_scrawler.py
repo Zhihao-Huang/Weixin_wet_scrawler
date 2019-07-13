@@ -73,8 +73,15 @@ def get_result(mpCookie,mptoken,fakeid,appCookie,appmsg_token,nickname,breakpage
         except:
             print("No response from Page "+str(data['begin'])+" in 10s, pass.\n")
             miss_page.append(data['begin'])
+        ##检查返回值是否正常
+        try:
+            dict_info =  content_json["app_msg_list"]
+        except:
+            print('获取url异常。')
+            fout.close()
+            break
         # 返回了一个json，里面是每一页的数据
-        for item in content_json["app_msg_list"]:
+        for item in dict_info:
             timestamp = item["update_time"]#转换成localtime
            # timestamp = 1540551261
             time_local = time.localtime(timestamp)
@@ -105,6 +112,9 @@ def get_result(mpCookie,mptoken,fakeid,appCookie,appmsg_token,nickname,breakpage
             time.sleep(10)
         page += 1
         print('Page: '+str(page)+"\n\n")
+        ##小于2018年时，跳出循环
+        if timestamp < 1514736000:
+            break
         #time.sleep(60)
     fout.close()
     breakpage = page + 1
